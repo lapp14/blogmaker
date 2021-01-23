@@ -3,7 +3,7 @@ const glob = require('glob');
 const path = require('path');
 const fs = require('fs-extra');
 
-const DATE = new Date().toISOString;
+const DATE = new Date().toISOString();
 const DIST_DIR = 'dist';
 const TEMP_DIR = 'temp';
 
