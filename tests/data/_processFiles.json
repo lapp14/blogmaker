@@ -1,0 +1,86 @@
+{
+    "fileList": [
+        "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517",
+        "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517.html",
+        "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Movie List e774799ba8f84866a13c30528bd97044.html",
+        "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Recipes d23566d16c1f4b2fa999a5bbcd22285f",
+        "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Recipes d23566d16c1f4b2fa999a5bbcd22285f.html",
+        "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Recipes d23566d16c1f4b2fa999a5bbcd22285f/Vegetable Lo Mein for Two e28dd2aadd444e90b707203406dc2469.html",
+        "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Travel Plans 8c2ea9c2cb4a48afbc79710bb7c52277",
+        "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Travel Plans 8c2ea9c2cb4a48afbc79710bb7c52277.html",
+        "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Travel Plans 8c2ea9c2cb4a48afbc79710bb7c52277/Europe Trip f8efede77694497f83ea8e75c59ed409.html",
+        "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Yearly Goals ccd2edd5d78b46a48b183b7a101e1d84.html"
+    ],
+    "expectedOutput": [
+        {
+            "uuid": "e28dd2aadd444e90b707203406dc2469",
+            "depth": 4.5,
+            "origin": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Recipes d23566d16c1f4b2fa999a5bbcd22285f/Vegetable Lo Mein for Two e28dd2aadd444e90b707203406dc2469.html",
+            "filepath": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Recipes d23566d16c1f4b2fa999a5bbcd22285f/vegetable-lo-mein-for-two.html",
+            "extension": "html"
+        },
+        {
+            "uuid": "f8efede77694497f83ea8e75c59ed409",
+            "depth": 4.5,
+            "origin": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Travel Plans 8c2ea9c2cb4a48afbc79710bb7c52277/Europe Trip f8efede77694497f83ea8e75c59ed409.html",
+            "filepath": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Travel Plans 8c2ea9c2cb4a48afbc79710bb7c52277/europe-trip.html",
+            "extension": "html"
+        },
+        {
+            "uuid": "e774799ba8f84866a13c30528bd97044",
+            "depth": 3.5,
+            "origin": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Movie List e774799ba8f84866a13c30528bd97044.html",
+            "filepath": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/movie-list.html",
+            "extension": "html"
+        },
+        {
+            "uuid": "d23566d16c1f4b2fa999a5bbcd22285f",
+            "depth": 3.5,
+            "origin": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Recipes d23566d16c1f4b2fa999a5bbcd22285f.html",
+            "filepath": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/recipes.html",
+            "extension": "html"
+        },
+        {
+            "uuid": "8c2ea9c2cb4a48afbc79710bb7c52277",
+            "depth": 3.5,
+            "origin": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Travel Plans 8c2ea9c2cb4a48afbc79710bb7c52277.html",
+            "filepath": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/travel-plans.html",
+            "extension": "html"
+        },
+        {
+            "uuid": "ccd2edd5d78b46a48b183b7a101e1d84",
+            "depth": 3.5,
+            "origin": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Yearly Goals ccd2edd5d78b46a48b183b7a101e1d84.html",
+            "filepath": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/yearly-goals.html",
+            "extension": "html"
+        },
+        {
+            "uuid": "d23566d16c1f4b2fa999a5bbcd22285f",
+            "depth": 3,
+            "origin": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Recipes d23566d16c1f4b2fa999a5bbcd22285f",
+            "filepath": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/recipes",
+            "extension": null
+        },
+        {
+            "uuid": "8c2ea9c2cb4a48afbc79710bb7c52277",
+            "depth": 3,
+            "origin": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/Travel Plans 8c2ea9c2cb4a48afbc79710bb7c52277",
+            "filepath": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517/travel-plans",
+            "extension": null
+        },
+        {
+            "uuid": "7adfb4e2c2bf4e37ac9b5055a654f517",
+            "depth": 2.5,
+            "origin": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517.html",
+            "filepath": "temp/personal-home.html",
+            "extension": "html"
+        },
+        {
+            "uuid": "7adfb4e2c2bf4e37ac9b5055a654f517",
+            "depth": 2,
+            "origin": "temp/Personal Home 7adfb4e2c2bf4e37ac9b5055a654f517",
+            "filepath": "temp/personal-home",
+            "extension": null
+        }
+    ]
+}
