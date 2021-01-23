@@ -5,7 +5,7 @@ Static site generator. Run on a zip of the site export.
 ## Usage
 
 - `npm install`
-- `node build.js <zip-file>
+- `node build.js export.zip`
 
 ## Tests
 
