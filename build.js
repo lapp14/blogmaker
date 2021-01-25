@@ -13,9 +13,12 @@ const manifest = {
 
 const usage = () => console.log(`Error: Usage is 'node build.js <zip-file>'`);
 
-const _clearFiles = () => fs.rmdirSync(TEMP_DIR, { recursive: true });
+/**
+ * Delete temp directory
+ */
+const clearFiles = () => fs.rmdirSync(TEMP_DIR, { recursive: true });
 
-const _transformFilename = (filename) => filename
+const transformFilename = (filename) => filename
     .replace(/[a-f0-9]{32}/g, '') // remove uuid's
     .replace(/ \//g, '/') // remove spaces before '/'
     .replace(/ \./g, '.') // remove spaces before '.ext'
@@ -23,17 +26,18 @@ const _transformFilename = (filename) => filename
     .replace(/ /g, '-') // spaces to '-'
     .toLowerCase();
 
-
+/**
+ * Converts a filepath string into file object with useful info for file renaming
+ * @param {*} filepath 
+ */
 const parseFilepath = (filepath) => {
     const split = filepath.split(' ');
     // remove .* file extensions on non-directories
     const uuid = split[split.length - 1].split('.')[0];
     const extension = split[split.length - 1].split('.')[1];
     const depth = filepath.split('/').length + (extension !== undefined ? 0.5 : 0);
-
-
     const pathSplit = filepath.split('/');
-    const transformFilename = _transformFilename(pathSplit[pathSplit.length - 1]);
+    const transformFilename = transformFilename(pathSplit[pathSplit.length - 1]);
     pathSplit.pop();
 
     return {
@@ -45,8 +49,11 @@ const parseFilepath = (filepath) => {
     }
 };
 
+/**
+ * Takes an array of filepaths, converts to file object, and sorts descending by depth
+ * @param {*} files a glob array of files
+ */
 const _processFiles = (files) => {
-    console.log(files);
     const result = []
     files.map((file) => {
         result.push(parseFilepath(file));
@@ -95,7 +102,7 @@ const unzip = async () => {
 };
 
 const build = async () => {
-    _clearFiles();
+    clearFiles();
     await unzip();
 
     const files = glob.sync(`${TEMP_DIR}/**/*`);
@@ -109,6 +116,6 @@ if (require.main === module) {
 }
 
 module.exports = {
-    _transformFilename,
+    transformFilename,
     _processFiles
 }
